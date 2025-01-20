@@ -1,0 +1,19 @@
+fun hello() {
+    println("Bonjour, lamine !")
+}
+
+
+fun sum(x: Int, y: Int): Int {
+    return x + y
+}
+
+fun printMessageWithPrefix(message: String, level: String) {
+    println("[$level] $message")
+}
+
+
+fun main() {
+    hello() // Affiche : Bonjour, le monde !
+    println(sum(1, 2)) // Résultat : 3
+    printMessageWithPrefix(level = "Info", message = "Salut")    // Résultat : [Info] Salut
+}

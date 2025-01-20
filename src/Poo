@@ -1,0 +1,89 @@
+//Class
+class Game() {
+    var title = ""
+    var thumb = ""
+    var description = ""
+}
+
+//method
+class Game() {
+    var title = ""
+    var thumb = ""
+    var description = ""
+    fun displayInfo() {
+        println("Titre : $title")
+        println("Thumb : $thumb")
+        println("Description : $description")
+    }
+}
+//property
+class Game(val title:String, val thumb:String) {
+    var description = ""
+    fun displayInfo() {
+        println("Titre : $title")
+        println("Thumb : $thumb")
+        println("Description : $description")
+    }
+}
+
+//Créer une instance
+class Game(val title: String, val thumb: String)
+fun main() {
+    val myGame = Game("Batman", "http://..")
+    println(myGame.title)
+}
+
+//constructor
+class Game(val title: String, val thumb: String) {
+    var description = ""
+    constructor(title: String, thumb: String, description: String) : this(title, thumb) {
+        this.description = description
+    }
+}
+
+//getter
+class Game(val title: String, val thumb: String) {
+    var description = ""
+    get() {
+        return field.toUpperCase()
+    }
+    set(value) {
+        field = value.toLowerCase()
+    }
+}
+//setter
+class Game(val title: String, val thumb: String) {
+    var description = ""
+    get() {
+        return field.toUpperCase()
+    }
+    set(value) {
+        field = value.toLowerCase()
+    }
+}
+//héritage
+open class Animal(val name: String) {
+    fun eat() {
+        println("$name mange de la nourriture.")
+    }
+}
+// Classe qui hérite d'Animal
+class Dog(name: String) : Animal(name) {
+    fun bark() {
+        println("$name aboie.")
+    }
+}
+
+// heritage avec fonction
+open class Animal {
+    open fun makeSound() {
+        println("L'animal fait un bruit.")
+    }
+}
+class Cat : Animal() {
+    override fun makeSound() {
+        println("Le chat miaule.")
+    }
+}
+
+//

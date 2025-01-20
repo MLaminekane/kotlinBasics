@@ -1,0 +1,34 @@
+fun main (){
+    println("Hello World")
+
+    for (numbers in 1..10){
+        println("numbers: $numbers")
+    }
+
+
+    //collectiosn elements
+    val cakes = listOf("carotte", "fromage", "chocolat")
+    for (cake in cakes) {
+        println("gâteau au $cake !")
+    }
+
+    //while
+    var cakesEaten = 0
+    while (cakesEaten < 3) {
+        println("Mange un gâteau")
+        cakesEaten++
+    }
+
+    //do while
+    val total = 3
+    var cakesBaked = 0
+    do {
+        println("Prépare un gâteau")
+        cakesBaked++
+    } while (cakesBaked < total)
+
+    //for loop
+    for (i in 0..9) {
+        println(i)
+    }
+}
