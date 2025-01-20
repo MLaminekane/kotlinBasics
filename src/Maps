@@ -1,0 +1,20 @@
+fun main() {
+    println("Hello, World!")
+
+    //acceder aux elements
+    val appleItems = mapOf("iphone" to 1700, "macbook " to 2000, "ipad " to 600)
+    println(appleItems)
+    println("le prix est ${appleItems["iphone"]}")
+
+    //ajouter un element
+    val appleItems2 = mutableMapOf("iphone" to 1700, "macbook " to 2000, "ipad " to 600)
+    appleItems2["apple watch"] = 400
+    println(appleItems2)
+    appleItems2.remove("iphone")
+    println(appleItems2)
+
+    //cles et valeurs
+    for ((key, value) in appleItems2) {
+        println("cle: $key, valeur: $value")
+    }
+}

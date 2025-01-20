@@ -1,0 +1,56 @@
+//fun main() {
+//    println("Hello, World!")
+//    val d: Int
+//    val check = true
+//    d = if(check) 1 else 2
+//    println(d)
+//
+//    //ou
+//
+//    val c: Int
+//    if (check) {
+//        c = 1
+//    } else {
+//        c = 2
+//    }
+//    println(c)
+//
+//
+//    val a = 1
+//    val b = 2
+//    println(if(a > 2) a else b)
+//}
+
+//fun main() {
+//    val obj = "Hello"
+//    when (obj) {
+//        "1" -> println("Un")
+//        "Hello" -> println("Salutation")
+//        else -> println("inconnu")
+//    }
+//}
+//// Résultat : Salutation
+
+
+//fun main() {
+//    val obj = "Hello"
+//    val result = when (obj) {
+//        "1" -> "Un"
+//        "Hello" -> "Salutation"
+//        else -> "Inconnu"
+//    }
+//    println(result)
+//}
+//// Résultat : Salutation
+
+fun main() {
+    val trafficLightState = "Red"
+    val trafficAction = when {
+        trafficLightState == "Green" -> "Avance"
+        trafficLightState == "Yellow" -> "Ralentis"
+        trafficLightState == "Red" -> "Stop"
+        else -> "Dysfonctionnement"
+    }
+    println(trafficAction)
+}
+// Résultat : Stop

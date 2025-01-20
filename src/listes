@@ -1,0 +1,33 @@
+fun main () {
+    println("Hello World!")
+    val listeDeLangues = listOf("Kotlin", "Java", "Scala", "Groovy", "Ceylon")
+    println("Liste de langues : $listeDeLangues[2]")
+
+
+    val listeDeLangues2 = listOf("Kotlin", "Java", "Flutter")
+    println("Liste de langues : ${listeDeLangues2[2]}")
+    println("Liste de langues : ${listeDeLangues2.get(1)}")
+
+
+    //acces aux elements
+    println("Liste de langues : ${listeDeLangues2.stream().filter { it.startsWith("J") }.toList()}")
+    println("Liste de langues : ${listeDeLangues2.first()}")
+
+    //count d'une list
+    println("Liste de langues : ${listeDeLangues2.count()}")
+
+    //ajout d'un element ou copie d'une liste
+    val listeDeLangues3 = mutableListOf("Kotlin", "Java", "Flutter", "Dart")
+    println(listeDeLangues3)
+    listeDeLangues3.add("Ceylon")
+    println(listeDeLangues3)
+
+    //recherche d'un element
+    println("Java" in listeDeLangues3)
+    println(listeDeLangues3.contains("Java"))
+    println("React" in listeDeLangues3)
+
+    //suppression d'un element
+    listeDeLangues3.remove("Java")
+    println(listeDeLangues3)
+}
